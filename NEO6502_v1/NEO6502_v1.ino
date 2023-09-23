@@ -25,6 +25,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 NEO6502 myNEO6502;
 
+/// <summary>
+/// setup NEO6502 config and load ROMs
+/// </summary>
 void setup() {
   Serial.begin(115200);
   sleep_ms(2500);
@@ -32,13 +35,19 @@ void setup() {
 
   myNEO6502.init();
   myNEO6502.setUCASE(true);
+  myNEO6502.setROMProtect(false);
 
   Serial.println("Loading ROMs:");
   myNEO6502.addROM("BIOS", bios_bin);
   myNEO6502.addROM("SUPERMON64", supermon64_bin);
   myNEO6502.addROM("DEMO", demo_bin);
+
+  myNEO6502.run();
 }
 
+/// <summary>
+/// 
+/// </summary>
 void loop() {
-  myNEO6502.run();
+
 }

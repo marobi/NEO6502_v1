@@ -15,13 +15,13 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 
  Name:		NEO6502.ino
- Author:	Rien
+ Author:	Rien Matthijsse
 */
 
 #include "NEO6502.h"
-#include "bios.h"
-#include "mon.h"
-#include "demo.h"
+
+#define CONFIG_BASIC 0  // boots into EhBasic
+#define CONFIG_DEMO  1  // boots into Supermon64
 
 NEO6502 myNEO6502;
 
@@ -34,13 +34,11 @@ void setup() {
   Serial.println("NEO6502 memulator");
 
   myNEO6502.init();
+
+  myNEO6502.setMemConfig(CONFIG_DEMO);
+
   myNEO6502.setUCASE(true);
   myNEO6502.setROMProtect(false);
-
-  Serial.println("Loading ROMs:");
-  myNEO6502.addROM("BIOS", bios_bin);
-  myNEO6502.addROM("SUPERMON64", supermon64_bin);
-  myNEO6502.addROM("DEMO", demo_bin);
 
   myNEO6502.run();
 }

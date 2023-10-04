@@ -26,17 +26,5 @@
     <ClInclude Include="__vm\.NEO6502_v1.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bios.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="demo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="basic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

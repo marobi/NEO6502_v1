@@ -18,18 +18,20 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 #include "NEO6502.h"
 
+#define cVersion     "v00.99.134"
+
 #define CONFIG_BASIC 0  // boots into EhBasic
 #define CONFIG_CDEMO 1  // boots into Supermon64
 
 NEO6502 myNEO6502;
 
 /// <summary>
-/// setup NEO6502 config and load ROMs
+/// setup NEO6502 config
 /// </summary>
 void setup() {
   Serial.begin(115200);
   sleep_ms(2500);
-  Serial.println("NEO6502 memulator");
+  Serial.printf("NEO6502 memulator %s\n", cVersion);
 
   myNEO6502.init();
 

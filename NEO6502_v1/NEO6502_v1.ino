@@ -18,7 +18,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 #include "NEO6502.h"
 
-#define cVersion     "v00.99.134"
+#include "version.h"
 
 #define CONFIG_BASIC 0  // boots into EhBasic
 #define CONFIG_CDEMO 1  // boots into Supermon64
@@ -31,7 +31,7 @@ NEO6502 myNEO6502;
 void setup() {
   Serial.begin(115200);
   sleep_ms(2500);
-  Serial.printf("NEO6502 memulator %s\n", cVersion);
+  Serial.printf("NEO6502 memulator %s\n", cVERSION);
 
   myNEO6502.init();
 

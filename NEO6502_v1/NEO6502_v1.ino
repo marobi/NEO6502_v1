@@ -20,9 +20,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 #include "version.h"
 
-#define CONFIG_BASIC 0  // boots into EhBasic
-#define CONFIG_CDEMO 1  // boots into Supermon64
-
 NEO6502 myNEO6502;
 
 /// <summary>
@@ -35,7 +32,7 @@ void setup() {
 
   myNEO6502.init();
 
-  myNEO6502.setSysConfig(CONFIG_CDEMO);
+  myNEO6502.setSysConfig(myNEO6502.getSysConfig());
 
   myNEO6502.run();
 }

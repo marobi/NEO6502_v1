@@ -20,10 +20,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 #include "version.h"
 
+// the NEO6502 instance
 NEO6502 myNEO6502;
 
 /// <summary>
-/// setup NEO6502 config
+/// setup NEO6502
 /// </summary>
 void setup() {
   Serial.begin(115200);

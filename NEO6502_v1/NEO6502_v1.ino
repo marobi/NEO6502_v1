@@ -17,6 +17,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  Author:	Rien Matthijsse
 */
 #include "NEO6502.h"
+#include "Adafruit_TinyUSB.h"
 
 #include "version.h"
 

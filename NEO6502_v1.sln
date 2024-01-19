@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NEO6502_v1", "NEO6502_v1\NEO6502_v1.vcxproj", "{4B8CE904-66EF-4820-834C-AFCA9B448261}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MIC_NEO6502", "..\MIC_NEO6502\MIC_NEO6502\MIC_NEO6502.vcxitems", "{B44597BB-4AB8-41CB-AF88-5275F4F1923B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MIC_NEO6502_v2", "..\MIC_NEO6502_v2\MIC_NEO6502_v2\MIC_NEO6502_v2.vcxitems", "{C448BAFA-8912-406B-82A7-48F15C64D43B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,7 +51,7 @@ Global
 		SolutionGuid = {58BC77B4-65E6-4FE8-B170-9075BE68D7C2}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\MIC_NEO6502\MIC_NEO6502\MIC_NEO6502.vcxitems*{4b8ce904-66ef-4820-834c-afca9b448261}*SharedItemsImports = 4
-		..\MIC_NEO6502\MIC_NEO6502\MIC_NEO6502.vcxitems*{b44597bb-4ab8-41cb-af88-5275f4f1923b}*SharedItemsImports = 9
+		..\MIC_NEO6502_v2\MIC_NEO6502_v2\MIC_NEO6502_v2.vcxitems*{4b8ce904-66ef-4820-834c-afca9b448261}*SharedItemsImports = 4
+		..\MIC_NEO6502_v2\MIC_NEO6502_v2\MIC_NEO6502_v2.vcxitems*{c448bafa-8912-406b-82a7-48f15c64d43b}*SharedItemsImports = 9
 	EndGlobalSection
 EndGlobal
